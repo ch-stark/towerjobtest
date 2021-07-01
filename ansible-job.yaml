@@ -8,5 +8,5 @@ spec:
     name: Demo Job Template
     secret: ansible-tower-creds
     type: AnsibleJob
-  mode: enabled
+  mode: once
   policyRef: policy-ansible-towertest
