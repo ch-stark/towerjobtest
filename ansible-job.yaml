@@ -1,7 +1,7 @@
 apiVersion: policy.open-cluster-management.io/v1beta1
 kind: PolicyAutomation
 metadata:
-  name: policy-namespace-notpresent-policy-automation
+  name: policy-ansible-towertest-policy-automation
   namespace: prodtowergittest
 spec:
   automationDef:
@@ -9,4 +9,4 @@ spec:
     secret: ansible-tower-creds
     type: AnsibleJob
   mode: enabled
-  policyRef: policy-namespace-notpresent
+  policyRef: policy-ansible-towertest
