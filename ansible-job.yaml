@@ -1,0 +1,12 @@
+apiVersion: policy.open-cluster-management.io/v1beta1
+kind: PolicyAutomation
+metadata:
+  name: policy-namespace-notpresent-policy-automation
+  namespace: prodtowergittest
+spec:
+  automationDef:
+    name: Demo Job Template
+    secret: ansible-tower-creds
+    type: AnsibleJob
+  mode: enabled
+  policyRef: policy-namespace-notpresent
